@@ -4,13 +4,8 @@ var CurrentMonth = 0;
 function getDaysInMonth(year, month){
     return new Date(year, month + 1, 0).getDate();
 }
-function getDayOfWeek(year, month, type){
-    var daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    if (type == 1){
-        return daysOfWeek[new Date(year, month, 1).getDay()];
-    } else {
+function getDayOfWeek(year, month){
         return new Date(year, month, 1).getDay();
-    }
 }
 function createArray(totalDays, DoW){
     var NoOfDays = totalDays+(DoW-1);
@@ -72,7 +67,7 @@ function calendar(id, year, month){
         if(year != null || month != null){
             CurrentYear = year;
             CurrentMonth = month;
-            createTable(createArray(getDaysInMonth(year,month), getDayOfWeek(year, month,0)), id);
+            createTable(createArray(getDaysInMonth(year,month), getDayOfWeek(year, month)), id);
         } else {
             var today = new Date();
             CurrentMonth = today.getMonth()
