@@ -8,6 +8,7 @@
     "node-minify": "^2.4.1"
   },
   "scripts": {
-    "test": "./node_modules/jshint/bin/jshint calendar.js"
+    "test": "./node_modules/jshint/bin/jshint calendar.js",
+    "minify": "minify.js"
   }
 }
