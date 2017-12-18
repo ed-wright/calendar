@@ -24,3 +24,5 @@ var promise = compressor.minify({
 });
  
 promise.then(function(min) {});
+
+console.log("Minify is now Done :)"):
