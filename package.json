@@ -4,7 +4,8 @@
   "author": "Edward Wright",
   "version": "0.0.1",
   "devDependencies": {
-    "jshint": "^2.6.0"
+    "jshint": "^2.6.0",
+    "node-minify": "^2.4.1"
   },
   "scripts": {
     "test": "./node_modules/jshint/bin/jshint calendar.js"
