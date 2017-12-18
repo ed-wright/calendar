@@ -70,8 +70,8 @@ function calendar(id, year, month){
             createTable(createArray(getDaysInMonth(year,month), getDayOfWeek(year, month)), id);
         } else {
             var today = new Date();
-            CurrentMonth = today.getMonth()
-            CurrentYear = today.getFullYear()
+            CurrentMonth = today.getMonth();
+            CurrentYear = today.getFullYear();
             createTable(createArray(getDaysInMonth(today.getFullYear(),today.getMonth()), getDayOfWeek(today.getFullYear(),today.getMonth(), 0)), id);
         }
     } else {
