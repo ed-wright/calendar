@@ -5,10 +5,10 @@
   "version": "0.0.1",
   "devDependencies": {
     "jshint": "^2.6.0",
-    "node-minify": "^2.4.1"
+    "mocha": "^4.0"
   },
   "scripts": {
     "test": "./node_modules/jshint/bin/jshint calendar.js",
-    "test2": "./node_modules/jshint/bin/jshint calendar.min.js"
+    "mocha": "mocha"
   }
 }
