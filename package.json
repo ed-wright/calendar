@@ -4,7 +4,6 @@
   "author": "Edward Wright",
   "version": "0.0.1",
   "devDependencies": {
-    "jshint": "^2.6.0",
     "mocha": "^4.0"
   },
   "scripts": {
